@@ -8,7 +8,7 @@ int main(void) {
   printf("\n Informe uma nota2: ");
   scanf("%f", &nota2);
   media = (nota1 + nota2) / 2; // calculo da media
-  printf("\n a sua media é: %f", media);
+  printf("\n a sua media é: %.2f", media); //%.2f é para definir a quatidade de casas decimais que serão mostradas
 
   if (media >= 7) {
       printf("\n aluno APROVADO");
@@ -31,9 +31,11 @@ int main(void) {
       }
       if (NMedia >=7) {
           printf("\n aluno APROVADO");
+          printf("\n Sua média é: %.2f" , NMedia);
       } 
     else {
         printf("\n aluno REPROVADO");
+        printf("\n Sua média é: %.2f" , NMedia);
       }
     }
     return 0;
